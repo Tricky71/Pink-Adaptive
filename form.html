@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <header class="page-header" id="header">
+        <div class="page-header__wrapper">
+            <a class="page-header__logo logo">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-pink-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-tablet.svg">
+                    <img src="img/logo-pink-mobile.svg" alt="Логотип Pink" class="logo__image" width="75" height="22">
+                </picture>
+            </a>
+            <nav class="main-nav main-nav--no-js main-nav--closed">
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <ul class="main-nav__list navigation-list">
+                    <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+                    <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Конкурс</a></li>
+                    <li class="main-nav__item"><a href="" class="main-nav__link">HTML Academy</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="promo-form promo-inner">
+            <div class="promo-form__wrapper promo-inner__wrapper">
+                <h1 class="promo-form__title promo-inner__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            </div>
+        </section>       
+        <section class="user-data">    
+            <header class="user-data__lead lead">
+                <p class="user-data-lead__text lead__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+                </p>
+            </header>
+            <h2 class="visually-hidden">Форма с данными пользователя</h2>
+            <div class="user-data__main-wrapper"> 
+                <form class="user-data__form" method="post" action="http://echo.htmlacademy.ru">
+                    <fieldset class="user-data-form__field user-data-form__name">
+                        <div class="user-data__wrapper">
+                            <ul class="user-data-form-name__list">
+                                <li class="user-data-form-name__item user-data-form-name__item--surname">
+                                    <label for="input-surname">Фамилия:</label>
+                                    <input type="text" name="surname" id="input-surname" placeholder="Укажите фамилию *" required>
+                                </li>
+                                <li class="user-data-form-name__item user-data-form-name__item--name">
+                                    <label for="input-name">Имя:</label>
+                                    <input type="text" name="name" id="input-name" placeholder="Введите ваше имя *" required>
+                                </li>
+                                <li class="user-data-form-name__item user-data-form-name__item--patronymic">
+                                    <label for="input-patronymic">Отчество:</label>
+                                    <input type="text" name="patronymic" id="input-patronymic" placeholder="Ну и отчество тоже">
+                                </li>    
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <fieldset class="user-data-form__field user-data-form__advantages">
+                        <div class="user-data__wrapper">
+                            <legend class="user-data-form__legend">Ваши безбашенные достижения в путешествии</legend>
+                            <ul class="user-data-form-advantages__list">
+                                <li class="user-data-form-advantages__item">
+                                    <input type="checkbox" name="see-shark" id="shark" checked>
+                                    <label for="shark">Сделал селфи с акулой</label>
+                                </li>
+                                <li class="user-data-form-advantages__item">
+                                    <input type="checkbox" name="burn-beach" id="beach">
+                                    <label for="beach">Обгорел на пляже</label>
+                                </li>
+                                <li class="user-data-form-advantages__item">
+                                    <input type="checkbox" name="see-norris" id="norris">
+                                    <label for="norris">Видел Чака Норриса</label>
+                                </li>
+                                <li class="user-data-form-advantages__item">
+                                    <input type="checkbox" name="buy-souveniers" id="souveniers">
+                                    <label for="souveniers">Накупил сувениров</label>
+                                </li>
+                                <li class="user-data-form-advantages__item">
+                                    <input type="checkbox" name="keep-tower" id="tower">
+                                    <label for="tower">Удержал башню</label>
+                                </li>
+                                <li class="user-data-form-advantages__item">
+                                    <input type="checkbox" name="crush-hotel" id="hotel">
+                                    <label for="hotel">Разгромил отель</label>
+                                </li>
+                            </ul>
+                        </div>    
+                    </fieldset>
+                    <fieldset class="user-data-form__field user-data-form__contacts">
+                        <div class="user-data__wrapper">
+                            <legend class="user-data-form__legend">Контактная информация</legend>
+                            <ul class="user-data-form-contacts__list">
+                                <li class="user-data-form-contacts__item user-data-form-contacts__item--tel">
+                                    <label for="tel">Номер телефона</label>
+                                    <input type="tel" name="contacts-tel" id="tel" placeholder="Номер, пожалуйста">
+                                </li>
+                                <li class="user-data-form-contacts__item user-data-form-contacts__item--email">
+                                    <label for="email">Адрес почты</label>
+                                    <input type="email" name="contacts-email" id="email" placeholder="Введите почту *" required>
+                                </li>
+                            </ul>
+                        </div>    
+                    </fieldset>
+                    <fieldset class="user-data-form__field user-data-form__app">
+                        <div class="user-data__wrapper">
+                            <legend class="user-data-form__legend">С каким приложением путешествовали?</legend>
+                            <ul class="user-data-form-app__list">
+                                <li class="user-data-form-app__item">
+                                    <input type="radio" name="app" id="ios" value="ios" checked>
+                                    <label for="ios">Pink для iOS</label>
+                                </li>
+                                <li class="user-data-form-app__item">
+                                    <input type="radio" name="app" id="android" value="android">
+                                    <label for="android">Pink на Android</label>
+                                </li>
+                                <li class="user-data-form-app__item">
+                                    <input type="radio" name="app" id="win" value="windows">
+                                    <label for="win">Windows Phone</label>
+                                </li>
+                            </ul>
+                        </div>    
+                    </fieldset>
+                    <fieldset class="user-data-form__field user-data-form__emotions">
+                        <div class="user-data__wrapper">
+                            <legend class="user-data-form__legend">Опишите свои эмоции</legend>
+                            <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                        </div>    
+                    </fieldset>
+                    <div class="user-data-form__submit">
+                        <div class="user-data__wrapper">
+                            <button class="user-data-form__submit-button">Отправить форму</button>
+                            <div class="user-data-form__submit-text"><i> * </i>  - Обязательные <span>для заполнения</span> поля</div>
+                        </div>    
+                    </div>
+                </form>
+            </div> 
+        </section>        
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <a href="#header" class="page-footer__logo logo">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-footer-desktop.svg">
+                    <!-- <source media="(min-width: 660px)" srcset="img/logo-footer-tablet.svg">    -->
+                    <img src="img/logo-footer-tablet.svg" alt="Логотип Pink" class="logo__image" width="147" height="40">
+                </picture>
+
+            </a>
+            <ul class="page-footer__social-list social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link social-list__link--twitter" href="">
+                        <span class="visually-hidden">Твиттер</span>
+                        <svg class="social-list__icon  social-list__icon--twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.5 14.663" width="18" height="15">
+                            <path d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link social-list__link--facebook" href="">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg class="social-list__icon  social-list__icon--facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.673 18.944" width="9" height="19">
+                            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link social-list__link--youtube" href="">
+                        <span class="visually-hidden">Ютуб</span>
+                        <svg class="social-list__icon  social-link__icon--youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.64 13.96" width="15" height="14">
+                            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <a  class="page-footer__copyright" href="">
+                <span class="page-footer__copyright-title">Разработано</span>
+                <!-- <div class= "page-footer__copyright-icon"> -->
+                    <svg class="page-footer__copyright-icon page-footer__copyright-icon--academy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.943 34.09" width="27" height="34">
+                       <path d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"/>
+                    </svg>
+                <!-- </div>     -->
+            </a>
+        </div>
+    </footer>
+    <script src="js/external.js"></script>   
+</body>
+</html>

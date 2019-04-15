@@ -1,0 +1,156 @@
+.promo {
+    margin: 0 auto;
+    background-color: #1d2631;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 700px auto;
+    color: #ffffff;
+    @media (min-resolution: @retina-dpi), 
+        (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+}
+
+.promo__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    padding: 466px 20px 0 20px;
+    background-image: url(../img/iphone-hand-mobile.png);
+    background-position: center 175px;
+    background-repeat: no-repeat;
+}
+
+.promo__block {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.promo-info__title,
+.promo-info__download {
+      display: block;
+}
+
+.promo-info__title {
+    display: none;
+}
+
+.promo-info__download {
+    margin-bottom: 40px;
+    color: #ffffff;
+    &:hover {
+        background-color: #ffffff;
+        color: #d22856;
+        border-color: transparent;
+    }
+    &:active {
+        color: rgba(322, 43, 37, 0.3);
+    }
+}
+
+.promo-info__brands {
+     .reset-list();
+     margin-bottom: 20px;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     
+}
+
+.promo-info__text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+@media(min-width: @tablet-width) {
+    .promo {
+        // height: 730px;
+        // margin-top: -95px;
+        background-image: url(../img/bg-back-tablet@1x.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 1200px auto;
+        @media(min-resolution: @retina-dpi),
+              (min-resolution: @retina-dppx) {
+                  background-image: url("../../img/bg-back-tablet@2x.jpg");
+        }
+    }
+
+    .promo__wrapper {
+        width: 620px;
+        height: 100%;
+        padding: 0 20px;
+        background-image: url(../img/iphone-hand-tablet@1x.png);
+        background-position: center bottom;
+    }
+
+    .promo__block {
+        width: 300px;
+        padding-top: 210px;
+        padding-bottom: 110px;
+    }
+
+    .promo-info__title {
+        display: block;
+        padding: 0 55px;
+        margin-bottom: 35px;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .promo-info__download {
+        margin-bottom: 50px;
+    }
+
+    .promo-info__text {
+       font-size: 18px;
+       line-height: 24px;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    .promo {
+       background-image: url(../img/bg-back-desktop@1x.jpg);
+       background-size: 2560px auto;
+            @media(min-resolution: @retina-dpi),
+                  (min-resolution: @retina-dppx) {
+                background-image: url("../img/bg-back-desktop@2x.jpg");
+        }
+        
+    }
+
+    .promo__wrapper {
+        width: 940px;
+        height: 100%;
+        padding: 0 130px;
+        background-image: url(../img/iphone-hand-desktop@1x.png);
+        background-position: 150px bottom;
+    }
+
+    .promo__block {
+        padding-top: 220px;
+    }
+
+    .promo-info__title {
+        display: block;
+        margin-bottom: 60px;
+        padding: 0;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .promo-info__download {
+        margin-bottom: 70px;
+    }
+
+    .promo-info__brands {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,127 @@
+.article {
+    display: none;
+    background-color: #f2f2f2;
+}
+
+.article__text {
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width: @tablet-width) {
+    .article {
+        display: block;
+        margin: 0 auto;
+        padding-top: 60px;
+        background-color: #ffffff;
+    }
+
+    .article__wrapper {
+        width: 620px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article__image {
+        position: relative;
+        width: 238px;
+        height: 276px;
+           &:after {
+               content:"24";
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               margin-top: -60px;
+               margin-left: -55px;
+               font-size: 96px;
+               line-height: 150px;
+               font-weight: 700;
+               color: #d22856;
+
+           }
+    }
+
+    .article__timer-icon {
+        width: 238px;
+        height: 276px;
+    }
+
+    .article__info {
+        box-sizing: border-box;
+        width: 50%;
+        padding-top: 40px;
+        // padding-bottom: 25px;
+    }
+
+    .article__title {
+        display: block;
+        width: 175px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .article__text {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .article__link {
+        display: block;
+        color: #ea9bb0;
+        text-align: left;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    .article {
+        padding-top: 0;
+        padding-bottom: 65px;
+        background-color: #f2f2f2;
+    }
+
+    .article__wrapper {
+        width: 940px;
+    }
+
+    .article__image {
+        width: 298px;
+        height: 345px;
+            &:after {
+                font-size: 120px;
+                line-height: 186px;
+                margin-top: -75px;
+                margin-left: -70px;
+            }
+    }
+
+    .article__timer-icon {
+        width: 298px;
+        height: 345px;
+    }
+
+    .article__info {
+        width: 60%;
+        padding-top: 100px;
+        // padding-bottom: 50px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .article__title {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .article__text {
+        margin-bottom: 20px;
+        width: 500px;
+    }
+
+
+}
